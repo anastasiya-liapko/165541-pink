@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -35,72 +36,73 @@
     </section>
     <section class="form">
       <div class="form-wrapper">
-        <h2>Поделитесь своей историей и полуите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+        <h2>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
         <form class="form__field" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__name">
-            <label>Фамилия:
+            <label class="text-field">Фамилия:
               <input type="text" name="last-name" value="Фамилия" placeholder="Укажите фамилию*" required>
             </label>
-            <label>Имя:
+            <label class="text-field">Имя:
               <input type="text" name="first-name" value="Имя" placeholder="Введите ваше имя*" required>
             </label>
-            <label>Отчество:
+            <label class="text-field">Отчество:
               <input type="text" name="middle-name" value="Отчество" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
           <fieldset class="form__achievements">
             <legend>Ваши безбашенные достижения в путешествии</legend>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Сделал селфи с акулой" checked>
               Сделал селфи с акулой
             </label>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Обгорел на пляже" checked>
               Обгорел на пляже
             </label>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Видел Чака Норриса">
               Видел Чака Норриса
             </label>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Накупил сувениров">
               Накупил сувениров
             </label>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Удержал башню" checked>
               Удержал башню
             </label>
-            <label>
+            <label class="checkbox-btn">
               <input type="checkbox" name="achievements" value="Разгромил отель">
               Разгромил отель
             </label>
           </fieldset>
           <fieldset class="form__contacts">
-            <label>Номер телефона
+            <label class="text-field">Номер телефона
               <input type="tel" name="tel" value="Номер телефона" placeholder="Номер, пожалуйста">
             </label>
-            <label>Адрес почты
+            <label class="text-field">Адрес почты
               <input type="email" name="email" value="Адрес почты" placeholder="Введите почту*" required>
             </label>
           </fieldset>
           <fieldset class="form__app">
             <legend>С каким приложением путешествовали?</legend>
-            <label>
+            <label class="radio-btn">
               <input type="radio" name="app" value="Pink для iOS" checked>
               Pink для iOS
             </label>
-            <label>
+            <label class="radio-btn">
               <input type="radio" name="app" value="Pink на Android">
               Pink на Android
             </label>
-            <label>
+            <label class="radio-btn">
               <input type="radio" name="app" value="Windows Phone">
               Windows Phone
             </label>
           </fieldset>
           <fieldset class="form__textarea">
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <label class="text-field">Опишите свои эмоции
+              <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </label>
           </fieldset>
           <button class="form__btn" type="submit">Отправить форму</button>
           <span class="form__legend"><sup>*</sup> - обязательные поля</span>
