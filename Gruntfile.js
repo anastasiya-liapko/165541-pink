@@ -1,3 +1,4 @@
+
 "use strict";
 
 module.exports = function(grunt) {
@@ -6,6 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
 
+
   grunt.initConfig({
     less: {
       style: {
@@ -13,6 +15,7 @@ module.exports = function(grunt) {
           "css/style.css": "less/style.less"
         }
       }
+
     },
 
     postcss: {
@@ -56,4 +59,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+
 };

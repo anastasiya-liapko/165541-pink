@@ -14,3 +14,29 @@
   line-height: 30px;
   color: @blue;
 }
+
+.album {
+  padding: 0;
+  background-color: red;
+}
+
+.album__wrapper {
+  .container();
+  height: 2485px;
+  background-color: yellow;
+}
+
+@media @tablet-widths {
+
+  .album__wrapper {
+    height: 2315px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .album__wrapper {
+    height: 2060px;
+  }
+}

@@ -9,3 +9,33 @@
   line-height: 18px;
   color: @blue;
 }
+
+.page-footer__wrapper {
+  .container();
+  height: 285px;
+  background-color: yellow;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+@media @tablet-widths {
+
+  .page-footer__wrapper {
+    height: 125px;
+  }
+
+  .page-footer--index {
+    display: block;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .page-footer__wrapper {
+    height: 200px;
+  }
+
+}
