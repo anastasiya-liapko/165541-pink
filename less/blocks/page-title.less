@@ -1,11 +1,50 @@
-.page-title {
-  background: url(../img/bg-back-mobile@1x.jpg) @blue;
-}
+// .page-title {
+//   background: url(../img/bg-back-mobile@1x.jpg) @blue;
+// }
 
 .page-title h1 {
+  margin: 0;
+
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 24px;
   color: @white;
+}
+
+.page-title {
+  height: 240px;
+  margin-top: -65px;
+  background-color: green;
+}
+
+.page-title--index {
+  height: 465px;
+  padding-bottom: 270px;
+}
+
+@media @tablet-widths {
+
+  .page-title {
+    height: 445px;
+    margin-top: -110px;
+  }
+
+  .page-title--index {
+    height: 730px;
+    padding-bottom: 0;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .page-title {
+    height: 395px;
+  }
+
+  .page-title--index {
+    height: 855px;
+  }
+
 }

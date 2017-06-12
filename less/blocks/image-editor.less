@@ -1,5 +1,6 @@
 .image-editor {
-  background-color: @white;
+  // background-color: @white;
+  background-color: pink;
 }
 
 .image-editor h2 {
@@ -12,4 +13,26 @@
 
 .image-editor__field {
   background-color: @grey;
+}
+
+.image-editor__wrapper {
+  .container();
+  height: 930px;
+  background-color: purple;
+}
+
+@media @tablet-widths {
+
+  .image-editor__wrapper {
+    height: 705px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .image-editor__wrapper {
+    height: 725px;
+  }
+
 }

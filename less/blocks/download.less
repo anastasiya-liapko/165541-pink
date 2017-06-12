@@ -14,3 +14,42 @@
   line-height: 24px;
   color: @white;
 }
+
+.download {
+  position: absolute;
+  top: 470px;
+  left: 0;
+  right: 0;
+}
+
+.download__wrapper {
+  .container();
+  height: 270px;
+
+  background-color: pink;
+}
+
+@media @tablet-widths {
+
+  .download {
+    top: 380px;
+  }
+
+  .download__wrapper {
+    padding-right: 320px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .download {
+    top: 450px;
+  }
+
+  .download__wrapper {
+    height: 310px;
+  }
+
+}

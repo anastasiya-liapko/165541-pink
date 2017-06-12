@@ -8,6 +8,8 @@
 }
 
 .benefits__title {
+  margin: 0;
+
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -22,4 +24,29 @@
   font-size: 18px;
   line-height: 24px;
   color: @black;
+}
+.benefits {
+  background-color: yellow;
+}
+
+.benefits__wrapper {
+  .container();
+  height: 1000px;
+  background-color: purple;
+}
+
+@media @tablet-widths {
+
+  .benefits__wrapper {
+    height: 1100px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .benefits__wrapper {
+    height: 1360px;
+  }
+
 }
