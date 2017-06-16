@@ -6,17 +6,42 @@
 
 .page-header__wrapper {
   .container();
-  height: 65px;
+  min-height: 65px;
   margin: 0 auto;
   background-color: blue;
+}
+
+.page-header__logo img {
+  width: 75px;
+  height: 30px;
+  margin: 20px 20px;
 }
 
 @media @tablet-widths {
 
   .page-header__wrapper {
-    height: 110px;
+    min-height: 110px;
+  }
+
+  .page-header__logo img {
+    width: 150px;
+    height: 45px;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
 
 }
 
+@media @desktop-widths {
 
+  .page-header__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .page-header__logo img {
+    margin: 0;
+  }
+}

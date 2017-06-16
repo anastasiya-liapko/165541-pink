@@ -16,8 +16,8 @@
 }
 
 .download {
-  position: absolute;
-  top: 470px;
+  position: relative;
+  top: 465px;
   left: 0;
   right: 0;
 }
@@ -29,15 +29,66 @@
   background-color: pink;
 }
 
+
+
+.download__wrapper {
+  .container();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+.download__btn {
+  width: 280px;
+  height: 55px;
+  margin-top: 25px;
+}
+
+.download__link {
+  // display: block;
+  // margin: 35px 15px;
+  // margin-bottom: 25px;
+  // padding: 15px 30px;
+  font-size: 0;
+  background-color: red;
+}
+
+.download__paragraph {
+  width: 280px;
+  margin: 0;
+  text-align: center;
+  background-color: red;
+}
+
 @media @tablet-widths {
 
   .download {
-    top: 380px;
+    top: 10px;
   }
 
   .download__wrapper {
+    width: 620px;
+    padding-top: 0;
     padding-right: 320px;
     box-sizing: border-box;
+  }
+
+  .download__btn {
+    width: 300px;
+  }
+
+  .download__link {
+    // margin: 45px 15px;
+  }
+
+  .download__paragraph {
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
   }
 
 }
@@ -45,11 +96,17 @@
 @media @desktop-widths {
 
   .download {
-    top: 450px;
+    top: 30px;
   }
 
   .download__wrapper {
+    width: 940px;
     height: 310px;
+    padding-right: 640px;
+  }
+
+  .download__link {
+    // margin: 65px 15px;
   }
 
 }

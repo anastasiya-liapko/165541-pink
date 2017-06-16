@@ -1,21 +1,24 @@
-// .page-title {
-//   background: url(../img/bg-back-mobile@1x.jpg) @blue;
-// }
+.page-title {
+  height: 240px;
+  margin-top: -65px;
+  // background: url(../img/bg-back-mobile@1x.jpg) @blue;
+  background-color: green;
+}
 
 .page-title h1 {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-left: 45px;
+  padding-right: 45px;
+  box-sizing: border-box;
 
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 24px;
+  line-height: auto;
   color: @white;
-}
-
-.page-title {
-  height: 240px;
-  margin-top: -65px;
-  background-color: green;
+  text-align: center;
 }
 
 .page-title--index {
@@ -23,16 +26,35 @@
   padding-bottom: 270px;
 }
 
+.page-title--index h1 {
+  display: none;
+}
+
 @media @tablet-widths {
 
   .page-title {
-    height: 445px;
+    height: 440px;
     margin-top: -110px;
+  }
+
+  .page-title h1 {
+    width: 620px;
+    padding-top: 170px;
+    font-size: 50px;
   }
 
   .page-title--index {
     height: 730px;
     padding-bottom: 0;
+  }
+
+  .page-title--index h1 {
+    display: block;
+    padding-top: 200px;
+    padding-right: 370px;
+    font-size: 40px;
+    box-sizing: border-box;
+    background-color: yellow;
   }
 
 }
@@ -43,8 +65,18 @@
     height: 395px;
   }
 
+  .page-title h1 {
+    width: 960px;
+  }
+
   .page-title--index {
     height: 855px;
+  }
+
+  .page-title--index h1 {
+    padding-top: 210px;
+    padding-right: 680px;
+    font-size: 50px;
   }
 
 }
