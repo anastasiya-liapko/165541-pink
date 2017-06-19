@@ -7,7 +7,6 @@
   color: @blue;
   background-color: @white;
   box-sizing: border-box;
-  background-color: red;
 }
 
 .album h1 {
@@ -21,10 +20,13 @@
 
   .container();
   height: 2485px;
-  padding: 0 20px;
   padding-top: 5px;
   box-sizing: border-box;
-  background-color: yellow;
+}
+
+.album__wrapper p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media @tablet-widths {
@@ -36,7 +38,7 @@
   .album__wrapper {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
 
     height: 2315px;

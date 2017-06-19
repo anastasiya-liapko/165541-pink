@@ -14,20 +14,17 @@
   line-height: 30px;
   color: @black;
 }
-.reviews {
-  background-color: blue;
-}
 
 .reviews__wrapper {
   .container();
   height: 355px;
   padding: 15px 20px;
   box-sizing: border-box;
-  background-color: orange;
 }
 
 .reviews__title {
-  margin: 0;
+  display: none;
+  // margin: 0;
   // position: absolute;
 
   // width: 1px;
@@ -90,7 +87,36 @@
 @media @desktop-widths {
 
   .reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
     height: 415px;
+    padding: 15px 0;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+  }
+
+  .reviews__prev {
+    order: -1;
+  }
+
+  .reviews__item {
+    padding-top: 150px;
+  }
+
+  .reviews__item p {
+    width: 700px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .reviews__author-descr {
+    font-size: 18px;
   }
 
 }

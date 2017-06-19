@@ -1,10 +1,11 @@
 .form {
-  // background-color: @white;
-  background-color: blue;
+  background-color: @white;
 }
 
 .form__section--grey {
+  padding-top: 20px;
   background-color: @grey;
+  box-sizing: border-box;
 }
 
 .form__section-title {
@@ -29,11 +30,12 @@
 
 .form__wrapper {
   .container();
-  background-color: purple;
 }
 
 .form__descr {
   margin: 0 5px;
+  padding-top: 45px;
+  box-sizing: border-box;
 }
 
 .form__field {
@@ -41,12 +43,14 @@
   flex-direction: column;
   justify-content: space-between;
   height: 2080px;
-  background-color: green;
 }
 
 .form__section {
+  display: flex;
+  flex-direction: column;
   height: 290px;
-  background-color: pink;
+  margin: 0;
+  border: none;
 }
 
 @media @tablet-widths {
