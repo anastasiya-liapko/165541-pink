@@ -9,9 +9,20 @@
 
 .price__wrapper {
   .container();
+  position: relative;
   height: 470px;
   padding-top: 90px;
   box-sizing: border-box;
+}
+
+.price__wrapper::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 1200px;
+  height: 94px;
+  background: url("../img/bg-triangle-white.svg") no-repeat;
 }
 
 .price__title {
@@ -55,10 +66,57 @@
   background-color: transparent;
 }
 
+.price__tariff--hit::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 556px;
+  width: 70px;
+  height: 70px;
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-position: center;
+}
+
+.price__descr {
+  text-align: left;
+}
+
+.price__tick,
+.price__cross {
+  position: relative;
+  font-size: 0;
+}
+
+.price__tick::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 220px;
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon-no.svg") no-repeat;
+  background-position: center;
+}
+
+.price__cross::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 220px;
+  width: 35px;
+  height: 35px;
+  background: url("../img/icon-yes.svg") no-repeat;
+  background-position: center;
+}
+
 @media @tablet-widths {
 
   .price__wrapper {
-    height: 375px;
+    height: 380px;
+  }
+
+  .price__wrapper::before {
+    top: -35px;
   }
 
   .price__table {
@@ -92,6 +150,28 @@
     text-align: center;
   }
 
+  .price__table .price__descr {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .price__tariff--hit::before {
+    top: 2px;
+    left: 306px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat;
+  }
+
+  .price__tick::before {
+    top: 5px;
+    left: 60px;
+  }
+
+  .price__cross::before {
+    top: 5px;
+    left: 60px;
+  }
 }
 
 @media @desktop-widths {
@@ -99,6 +179,13 @@
   .price__wrapper {
     height: 525px;
     padding-top: 150px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .price__wrapper::before {
+    top: 0;
+    left: -130px;
   }
 
   .price__table {
@@ -125,4 +212,21 @@
     height: 60px;
   }
 
+  .price__tariff--hit::before {
+    top: 2px;
+    left: 467px;
+    width: 75px;
+    height: 75px;
+    background: url("../img/bg-hit.svg") no-repeat;
+  }
+
+  .price__tick::before {
+    top: 15px;
+    left: 90px;
+  }
+
+  .price__cross::before {
+    top: 15px;
+    left: 90px;
+  }
 }

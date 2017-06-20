@@ -1,7 +1,9 @@
 .page-title {
   height: 240px;
   margin-top: -65px;
-  // background: url(../img/bg-back-mobile@1x.jpg) @blue;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: @blue;
 }
 
@@ -22,8 +24,22 @@
 }
 
 .page-title--index {
+  position: relative;
   height: 470px;
   padding-bottom: 270px;
+}
+
+.page-title--index::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+  left: 50%;
+  margin-left: -160px;
+  width: 258px;
+  height: 286px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-position: center;
 }
 
 .page-title--index h1 {
@@ -56,6 +72,13 @@
     box-sizing: border-box;
   }
 
+  .page-title--index::before {
+    top: 400px;
+    left: 50%;
+    margin-left: 100px;
+    width: 258px;
+    height: 286px;
+  }
 }
 
 @media @desktop-widths {
@@ -77,5 +100,4 @@
     padding-right: 680px;
     font-size: 50px;
   }
-
 }

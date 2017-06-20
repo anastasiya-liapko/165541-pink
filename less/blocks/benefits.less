@@ -9,19 +9,31 @@
 
 .benefits__wrapper {
   .container();
+  position: relative;
   height: 720px;
-  padding-top: 35px;
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+}
+
+.benefits__wrapper::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 1200px;
+  height: 94px;
+  background: url("../img/bg-triangle-white.svg") no-repeat;
 }
 
 .benefits__title {
   width: 320px;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -48,7 +60,20 @@
 }
 
 .benefits__item:nth-child(3) {
+  position: relative;
   padding-bottom: 300px;
+}
+
+.benefits__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  left: 67%;
+  width: 157px;
+  height: 320px;
+  margin-left: -129px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: center;
 }
 
 .benefits__item:last-child {
@@ -71,7 +96,12 @@
 
   .benefits__wrapper {
     height: 855px;
+    padding-top: 35px;
     box-sizing: border-box;
+  }
+
+  .benefits__wrapper::before {
+    top: -45px;
   }
 
   .benefits__title {
@@ -137,11 +167,19 @@
 @media @desktop-widths {
 
   .benefits__wrapper {
+    width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
     height: 1035px;
     padding-top: 0;
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
+  }
+
+  .benefits__wrapper::before {
+    top: 0;
+    left: -130px;
   }
 
   .benefits__title {

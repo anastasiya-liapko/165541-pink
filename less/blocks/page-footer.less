@@ -2,14 +2,6 @@
   background-color: @white;
 }
 
-.page-footer a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: @blue;
-}
-
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -18,10 +10,40 @@
 
   .container();
   height: 285px;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .page-footer--index {
   display: none;
+}
+
+.page-footer__copyright {
+  position: relative;
+
+  a {
+    padding-right: 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: @blue;
+  }
+}
+
+.page-footer__copyright::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/htmlacademy.svg") no-repeat;
+  background-position: center;
+}
+
+.page-footer__social {
+  position: relative;
 }
 
 @media @tablet-widths {
@@ -43,7 +65,7 @@
 
   .page-footer__wrapper {
     height: 200px;
-    padding: 0 10px;
+    padding: 0 130px;
     box-sizing: border-box;
   }
 
