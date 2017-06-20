@@ -17,50 +17,12 @@
   height: 135px;
 }
 
-.photo-comment {
-  width: 280px;
-  margin: 0;
-  margin: 0 20px;
-  margin-top: -10px;
-  padding: 20px 15px;
-  padding-right: 10px;
-  background-color: @grey;
-  box-sizing: border-box;
-}
-
-.photo-comment h3 {
-  display: inline-block;
-  margin: 0;
-}
-
-.photo-comment p {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.photo-author {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: @blue;
-}
-
 .photo-time {
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
   color: @blue;
-}
-
-.photo-likes {
-  padding-left: 35px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  color: @red;
 }
 
 @media @tablet-widths {
@@ -79,41 +41,10 @@
     height: 510px;
   }
 
-  .photo-comment {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    width: 300px;
-    height: 155px;
-    padding: 20px 25px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .photo-comment--day {
-    width: 620px;
-    height: 120px;
-  }
-
-  .photo-comment--day p {
-    order: 1;
-  }
-
-  .photo-comment--day .photo-likes {
+  .photo--day .photo-likes {
     margin-left: auto;
     margin-top: 0;
   }
-
-  .photo-comment p {
-    width: 100%;
-  }
-
-  .photo-likes {
-    margin-top: auto;
-    padding-left: 0;
-    padding-right: 35px;
-  }
-
 }
 
 @media @desktop-widths {
@@ -121,7 +52,6 @@
   .photo--day {
     margin: 0;
   }
-
 
   .photo-link img {
     width: 300px;
@@ -132,10 +62,4 @@
     width: 1200px;
     height: 505px;
   }
-
-  .photo-comment--day {
-    width: 940px;
-    height: 100px;
-  }
-
 }
